@@ -1,0 +1,125 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsDialog
+  Caption = 'Form1'
+  ClientHeight = 471
+  ClientWidth = 494
+  Color = clActiveCaption
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  OnMouseMove = FormMouseMove
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Shape1: TShape
+    Left = 225
+    Top = 225
+    Width = 50
+    Height = 50
+    Align = alCustom
+    Visible = False
+    OnMouseMove = Shape1MouseMove
+  end
+  object Label1: TLabel
+    Left = 408
+    Top = 8
+    Width = 8
+    Height = 16
+    Caption = '0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 361
+    Top = 8
+    Width = 41
+    Height = 16
+    Caption = 'Score:'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -14
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+  end
+  object SpeedButton1: TSpeedButton
+    Left = 190
+    Top = 235
+    Width = 120
+    Height = 30
+    Caption = #1057#1090#1072#1088#1090
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    OnClick = SpeedButton1Click
+  end
+  object Shape3: TShape
+    Left = 352
+    Top = 96
+    Width = 20
+    Height = 20
+    Brush.Color = clBlue
+    Visible = False
+    OnMouseMove = Shape3MouseMove
+  end
+  object Shape4: TShape
+    Left = 90
+    Top = 82
+    Width = 20
+    Height = 20
+    Brush.Color = clBlue
+    Visible = False
+    OnMouseMove = Shape4MouseMove
+  end
+  object Shape5: TShape
+    Left = 225
+    Top = 352
+    Width = 20
+    Height = 20
+    Brush.Color = clBlue
+    Visible = False
+    OnMouseMove = Shape5MouseMove
+  end
+  object Shape2: TShape
+    Left = 0
+    Top = 0
+    Width = 6
+    Height = 6
+    Brush.Color = clRed
+    Shape = stCircle
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 20
+    OnTimer = Timer1Timer
+    Left = 456
+    Top = 432
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 1
+    OnTimer = Timer2Timer
+    Left = 424
+    Top = 432
+  end
+  object Timer3: TTimer
+    Enabled = False
+    OnTimer = Timer3Timer
+    Left = 392
+    Top = 432
+  end
+end
